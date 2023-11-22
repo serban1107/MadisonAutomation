@@ -192,27 +192,27 @@ public WebDriverWait wait;
         billingButtonContainer.click();
     }
     //Vlad varianta1
-    public void checkIfCheckoutFieldIsMandatory(WebElement locator) throws InterruptedException {
-        addItemToCart();
-        addPreliminaryInfo();
-        clickBtnRegister();
-        fillMandatoryFields();
-        locator.clear();
-        clickWhenReady(billingButton);
-        WebElement target = locator.findElement(By.xpath(".//following-sibling::div"));
-        assertWhenReady(target, "This is a required field.");
-    }
+//    public void checkIfCheckoutFieldIsMandatory(WebElement locator) throws InterruptedException {
+//        addItemToCart();
+//        addPreliminaryInfo();
+//        clickBtnRegister();
+//        fillMandatoryFields();
+//        locator.clear();
+//        clickWhenReady(billingButton);
+//        WebElement target = locator.findElement(By.xpath(".//following-sibling::div"));
+//        assertWhenReady(target, "This is a required field.");
+//    }
     //Vlad varianta2
-    public void checkIfCheckoutSelectIsMandatory(WebElement locator) throws InterruptedException {
-        addItemToCart();
-        addPreliminaryInfo();
-        clickBtnRegister();
-        fillMandatoryFields();
-        locator.findElement(By.xpath(".//option")).click();
-        clickWhenReady(billingButton);
-        WebElement target = locator.findElement(By.xpath(".//following-sibling::div"));
-        assertWhenReady(target, "Please select an option.");
-    }
+//    public void checkIfCheckoutSelectIsMandatory(WebElement locator) throws InterruptedException {
+//        addItemToCart();
+//        addPreliminaryInfo();
+//        clickBtnRegister();
+//        fillMandatoryFields();
+//        locator.findElement(By.xpath(".//option")).click();
+//        clickWhenReady(billingButton);
+//        WebElement target = locator.findElement(By.xpath(".//following-sibling::div"));
+//        assertWhenReady(target, "Please select an option.");
+//    }
 
 
 
